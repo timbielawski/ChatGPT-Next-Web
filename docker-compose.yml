@@ -1,9 +1,9 @@
 version: '3.9'
 services:
   chatgpt-next-web: 
+    build: .
     profiles: ["no-proxy"]
     container_name: chatgpt-next-web
-    image: yidadaa/chatgpt-next-web
     ports:
       - 3000:3000
     environment:
